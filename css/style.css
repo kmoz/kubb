@@ -613,6 +613,10 @@ ul{
     width: 70%;
     margin: 5% auto;
   }
+  .about-me img{
+    float: left;
+    padding-right: 2em;
+  }
   .about-me:after{
     display: block;
     content: "";
@@ -632,6 +636,7 @@ ul{
   .about-me .line-right{text-align: left}
   .about-me{text-align: center}
  .other-services .service{margin-left: 22%;}
+ .line-right-heading{text-align: center;}
 }
 
 
