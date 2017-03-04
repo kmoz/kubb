@@ -103,42 +103,50 @@ nav{
   position: fixed;
   width: 100%;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px;
-  transition: background-color, 0.7s;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*transition: height, 0.3s;*/
 }
 
-.navbar-scroll{
-  background-color: rgba(0, 0, 0, 1);
-  transition: background-color, 0.7s;
-}
+
 
 .navbar-nav{
-  min-height: 60px;
   width: 100%;
+  line-height: 30px;
+  height: 60px;
+  transition: all, 0.3s;
 }
+
+/*.navbar-scroll{
+  height: 30px;
+  line-height: 40px;
+  transition: all, 0.3s;
+}*/
 
 .navbar-brand{
   float: left;
   margin-left: 10%;
+  height: 30px;
   margin-top: 15px;
 }
 
-.handle{
-  box-sizing: border-box;
-  cursor: pointer;
-  color: #fff;
-  display: none;
-}
 
 
 .nav-trigger{
   display: none;
   cursor: pointer;
-  width: 30px;
-  margin-right: 30px;
+  width: 40px;
+  height: 20px;
+  margin-right: 5%;
+  margin-top: 10px;
   float: right;
   padding: 10px 0;
+  background-color: #28b8d8;
+  transition: all 0.3s;
+}
+.nav-trigger:hover,
+.nav-trigger:focus{
+  background-color: #00a1c4;
+  transition: all 0.3s;
 }
 
 .nav-trigger::after{
@@ -148,10 +156,10 @@ nav{
 }
 
 .icon-bar{
-  width: 30px;
-  height: 5px;
+  width: 18px;
+  height: 2px;
   background-color: #fff;
-  margin: 6px auto;
+  margin: 3px auto;
 }
 
 
@@ -159,8 +167,8 @@ nav{
   list-style-type: none;
   float: right;
   margin-right: 10%;
-  line-height: 30px;
   overflow: hidden;
+
 }
 
 .nav li{
@@ -188,7 +196,8 @@ nav{
 }
 
 .active,
-.nav li a:hover{
+.nav li a:hover,
+.nav li a:focus{
   color: #28b8d8;
 }
 
@@ -197,7 +206,6 @@ nav{
 
 nav{
   padding: 0;
-  background: #000;
 }
 
   .navbar-brand{
@@ -217,6 +225,7 @@ nav{
     width: 100%;
     float: none;
     transition: max-height, 0.4s;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .nav li{
@@ -227,7 +236,8 @@ nav{
 
   }
 
-  .nav li:hover{
+  .nav li:hover,
+  .nav li:focus{
     background-color: #28b8d8 ;
   }
 
@@ -237,7 +247,8 @@ nav{
     height: 100%;
   }
 
-  .nav li a:hover{
+  .nav li a:hover,
+  .nav li a:focus{
     color: #fff;
   }
 
@@ -434,25 +445,26 @@ header .container{text-align: center;}
   width: 100%;
 }
 
-.button{
+.btn{
 	height: 30px;
 	width: 150px;
 	background:  transparent;
 	border: 1px solid #a6a6a6;
-	color: #a6a6a6;
-	text-transform: uppercase;
-	font-size: 14px;
-	text-decoration: none;
-	padding: 1% 2%;
+	padding: 0.5% 1%;
+  font-size: 14px;
+  text-decoration: none;
+  color: #a6a6a6;
+  font-weight: bold;
+  text-transform: uppercase;
   display: block;
   margin: 3% auto;
   line-height: 30px;
   transition: all 0.5s;
 }
 
-.button:hover{
-  background-color: #a6a6a6;
-  color: #2c2c2c;
+.btn:hover{
+  border-color: #00a1c4;
+  color: #00a1c4;
   transition: all 0.5s;
 }
 
@@ -500,6 +512,7 @@ header .container{text-align: center;}
 	background:  #FFF;
 	border: 1px solid #d9d9d9;
   text-align: center;
+  padding-bottom: 1.5em;
 }
 
 .blog-posts img{
@@ -539,15 +552,33 @@ header .container{text-align: center;}
 	text-transform: uppercase;
 	text-decoration: none;
 	border-bottom: 1px solid #28b8d8;
-	font-size: 16px;
+	font-size: 14px;
+  transition: all 0.3s;
 }
 
-.blog-posts .like{
-	text-align: right;
-	margin-right: 10%;
-	font-size: 16px;
-	background: url('../images/like.png') no-repeat  center right 23px;
+.blog-link:focus,
+.blog-link:hover,
+.like-focus,
+.like:hover{
+  color: #28b8d8;
+  transition: all 0.3s;
+  cursor: pointer;
 }
+
+.like{
+  display: block;
+	text-align: right;
+  margin-right: 10%;
+	font-size: 14px;
+  text-decoration: none;
+}
+
+.like::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
 .blog-posts{padding-bottom: 30px}
 
 

@@ -3,13 +3,15 @@ $(document).ready(function(){
   $(".nav-trigger").on("click", function() {
     $(".nav").toggleClass('open')
   })
-  //Change navbar bgcolor on scroll
-  $(window).scroll(function(){
-    if ($(document).scrollTop() > 50){
-      $("nav").addClass('navbar-scroll')
-    }
-    else {
-      $('nav').removeClass('navbar-scroll')
-    }
-  })
+  //Change navbar height on scroll
+  // $(window).scroll(function(){
+  //   if ($(document).scrollTop() > 50){
+  //     $(".navbar-nav").addClass('navbar-scroll')
+  //   }
+  //   else {
+  //     $('.navbar-nav').removeClass('navbar-scroll')
+  //   }
+  // })
+
+
 });
