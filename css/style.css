@@ -491,6 +491,8 @@ header .container{text-align: center;}
   .instagram .container ul li:first-child,
   .instagram .container ul li:nth-child(2){margin-bottom: 2%}
 
+  .btn{font-size: 13px;}
+
 }
 
 @media (max-width: 480px){
@@ -500,6 +502,7 @@ header .container{text-align: center;}
     margin: 5% auto;
   }
   .instagram .container ul li:first-child{margin: 5% auto;}
+  .btn{font-size: 13px;}
 }
 
 /******************************************************************************/
