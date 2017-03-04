@@ -466,11 +466,16 @@ header .container{text-align: center;}
   transition: all 0.5s;
 }
 
-.btn:hover{
-  border-color: #00a1c4;
+.btn span{color: #a6a6a6; transition: all 0.5s;}
+
+.btn:hover{border-color: #00a1c4;}
+
+.btn:hover span{
   color: #00a1c4;
   transition: all 0.5s;
 }
+
+
 
 @media (min-width: 961px){
 
